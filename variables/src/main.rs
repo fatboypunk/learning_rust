@@ -14,4 +14,15 @@ fn main() {
 
     println!("The value of y is: {}", y);
     // The value of x is: 12
+
+
+    // With shadowing the `spaces` variable can change its type
+    let spaces = "   ";
+    let spaces = spaces.len();
+
+    // A mutable variable can't change it's type
+    // ```rust
+    // let mut spaces = "   ";
+    // spaces = spaces.len();
+    // ```
 }
